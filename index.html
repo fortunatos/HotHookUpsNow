@@ -35,46 +35,60 @@
     gtag('config', 'G-4RK11EWEJE');
   </script>
 
-  <style>
-    body {
+   <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
       background: #000;
       color: #fff;
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
     }
+
     .container {
-      padding: 40px 20px;
-      max-width: 600px;
-      margin: auto;
+      height: 100vh;
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
     }
+
     h1 {
-      font-size: 28px;
+      font-size: 24px;
       color: #ff3366;
+      margin-bottom: 16px;
     }
+
     p {
-      font-size: 18px;
-      margin: 20px 0;
+      font-size: 16px;
+      margin: 10px 0;
     }
+
     .cta-button {
       background: #ff3366;
       color: #fff;
-      padding: 15px 30px;
-      font-size: 20px;
+      padding: 12px 24px;
+      font-size: 18px;
       text-decoration: none;
       border-radius: 8px;
-      display: inline-block;
-      margin-top: 30px;
+      margin-top: 20px;
       transition: background 0.3s;
     }
+
     .cta-button:hover {
       background: #e02557;
     }
+
     .preview-image {
-      max-width: 100%;
+      width: 100%;
+      max-width: 300px;
       border-radius: 12px;
-      margin-top: 20px;
+      margin: 10px 0;
     }
   </style>
 </head>
