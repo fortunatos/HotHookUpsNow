@@ -95,12 +95,27 @@
 <body>
 
   <div class="container">
-    <h1>Thousands of Naughty Singles Are Online Right Now</h1>
+    <h1 id="headline">Thousands of Naughty Singles Are Online Right Now</h1>
     <p>No credit card needed. No fake profiles. Just real fun and hot connections near you.</p>
     <img class="preview-image" src="https://inveintshirts.com/wp-content/uploads/2023/10/Transparent-Lace-Body-Suit-Women-Sexy-Lingerie-Tight-Dress-Sex-Crotchless-Button-Underwear-Female-Erotic-Porn-3.jpg" alt="Preview" />
     <p>👉 Tap the button below and get instant access to local singles who are waiting for you.</p>
     <a class="cta-button" href="https://bgfffig.hornylocls.com/s/63d00e240fcd5?subsource=HotHookUpsNow" target="_blank" rel="nofollow noopener">🔥 Join Free Now</a>
   </div>
+
+  <!-- Geo IP Script -->
+  <script>
+    fetch('https://ipapi.co/json/')
+      .then(response => response.json())
+      .then(data => {
+        const city = data.city || data.region || "your area";
+        const headline = document.getElementById('headline');
+        headline.textContent = `Thousands of Naughty Singles in ${city} Are Online Now`;
+      })
+      .catch(() => {
+        // fallback: do nothing
+      });
+  </script>
+
 
 </body>
 </html>
